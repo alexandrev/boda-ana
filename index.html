@@ -273,7 +273,7 @@
     .gwd-span-tbay {
       font-family: "Segoe Script";
       font-size: 120%;
-     
+     color: #7F7F7F;
       white-space: normal;
       width: 100%;
     }
@@ -294,6 +294,7 @@
     }
 
     .gwd-p-1s61 {
+      color: #7F7F7F;
       display: block;
       font-family: "Segoe Script";
       font-size: 120%;
@@ -325,6 +326,7 @@
       border-left-width: 4px;
     }
 
+
     .boton {
       background-color: rgba(213, 210, 213, 0.3);
       border-block-style: solid;
@@ -335,10 +337,8 @@
       border-width: 2px;
       border-inline-style: solid;
       border-inline-width: 2px;
-      display: block;
       font-family: "Ink Free", sans-serif;
       padding-right: 10%;
-      font-size: 140%;
       white-space: normal;
       width: 100%;
     }
@@ -432,15 +432,20 @@
 
     .gwd-span-1bl6 {
       font-size: 150%;
+      color: #7F7F7F;
       font-family: 'Belgrano', serif;
       text-align: center;
       text-transform: uppercase;
       padding: 3%;
     }
+    .button-text{
+      white-space: normal;
+    }
 
     .icon-large {
       font-size: 200%;
       text-align: left;
+      transform: rotate(180deg);
     }
 
     .center {
@@ -523,11 +528,20 @@
                 </div>
 
                 <div class="row">
-                  <p class="gwd-span-1bl6">Tenemos el placer de invitaros a nuestro enlace matrimonial que se celebrar&aacute;:</p>
+                  <div class="col-md-2" id="">
+
+                  </div>
+                  <div class="col-md-8" id="">
+                    <p class="gwd-span-1bl6">Tenemos el placer de invitaros a nuestro enlace matrimonial que se celebrar&aacute;:</p>
+ 
+                  </div>
+                  <div class="col-md-2" id="">
+
+                  </div>
                 </div>
               </div>
               <div class="row">
-                <div class="col-md-2" id="">
+                <div class="col-md-1" id="">
 
                 </div>
                 <div class="col-md-2">
@@ -543,13 +557,12 @@
                 <path stroke-linecap="round" stroke-linejoin="round" d="M 4.046,3 C 4.046,3 3,77.995 3,77.995"></path>
               </svg-->
 
-                <div class="col-md-3 line-left" id="boton_iglesia">
+                <div class="col-md-4 line-left" id="boton_iglesia">
                   <button type="button" id="iglesia-boton" class="btn btn-default btn-lg boton bx100">
                     <div class="row">
                       <div class="col-md-5" id="i1"><img  class="icon-img" src="assets/iglesia.png" ></span> </div>
-                      <div class="col-md-7" id="i2">
-                        <p>Santuario Nuestra Señora de Sonsoles
-                        </p>
+                      <div class="col-md-7 button-text" id="i2">
+                        Santuario Nuestra Señora de Sonsoles
                       </div>
                     </div>
                   </button>
@@ -561,12 +574,12 @@
                 <!--svg  class="custom_button" data-gwd-shape="path" preserveAspectRatio="none" viewBox="0 0 7.046 80.995" class="gwd-path-vj88 gwd-svg-oo0i">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M 4.046,3 C 4.046,3 3,77.995 3,77.995"></path>
               </svg-->
-                <div class="col-md-3 line-left" id="boton_banquete">
+                <div class="col-md-4 line-left" id="boton_banquete">
                   <button type="button" id="banquete-boton" class="btn btn-default btn-lg boton bx100">
                     <div class="row">
                       <div class="col-md-5" id="i1"><img class="icon-img" src="assets/plato.png" > </div>
-                      <div class="col-md-7" id="i2">
-                        <p>Finca El Montecillo</p>
+                      <div class="col-md-7 button-text" id="i2">
+                        Finca El Montecillo
                       </div>
                     </div>
 
