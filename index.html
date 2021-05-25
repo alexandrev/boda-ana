@@ -57,7 +57,7 @@
       margin: 0px;
     }
 
-    .exit-btn{
+    .exit-btn {
       color: rgb(15, 198, 206);
     }
 
@@ -114,7 +114,9 @@
 
     #logo-iglesia,
     #logo-banquete,
-    #logo-confirmacion,#image_3,#image_4 {
+    #logo-confirmacion,
+    #image_3,
+    #image_4 {
       width: 100%;
       display: block;
     }
@@ -273,7 +275,7 @@
     .gwd-span-tbay {
       font-family: "Segoe Script";
       font-size: 120%;
-     color: #7F7F7F;
+      color: #7F7F7F;
       white-space: normal;
       width: 100%;
     }
@@ -301,8 +303,8 @@
       font-style: italic;
       text-align: center;
       margin-top: 10%;
-     white-space: normal;
-     font-weight: bold;
+      white-space: normal;
+      font-weight: bold;
       vertical-align: middle;
 
     }
@@ -355,7 +357,7 @@
     }
 
     .icon-img {
-        width: 50%;
+      width: 50%;
     }
 
     .custom_button {
@@ -405,6 +407,11 @@
 
     }
 
+    .h-100 {
+      height: 100vh;
+
+    }
+
 
 
     .gwd-imagebutton-1c19 {
@@ -438,7 +445,8 @@
       text-transform: uppercase;
       padding: 3%;
     }
-    .button-text{
+
+    .button-text {
       white-space: normal;
     }
 
@@ -446,6 +454,10 @@
       font-size: 200%;
       text-align: left;
       transform: rotate(180deg);
+    }
+
+    .lat-color {
+      background-color: rgb(15, 198, 206);
     }
 
     .center {
@@ -460,34 +472,43 @@
 
       $('#confirmacion-boton').on('click', function (event) {
         $("#home").removeClass("show");
+        $("#home").removeClass("h-100");
         $("#home").addClass("fade");
         $("#confirmacion").addClass("show");
+        $("#confirmacion").addClass("h-100");
         $("#confirmacion").removeClass("fade");
       });
 
       $('#exit-confirmacion-boton').on('click', function (event) {
         $("#home").addClass("show");
+        $("#home").addClass("h-100");
         $("#home").removeClass("fade");
         $("#confirmacion").removeClass("show");
+        $("#confirmacion").removeClass("h-100");
         $("#confirmacion").addClass("fade");
       });
 
       $('#iglesia-boton').on('click', function (event) {
         $("#home").removeClass("show");
+        $("#home").removeClass("h-100");
         $("#home").addClass("fade");
         $("#iglesia").addClass("show");
+        $("#iglesia").addClass("h-100");
         $("#iglesia").removeClass("fade");
       });
 
       $('#exit-iglesia-boton').on('click', function (event) {
         $("#home").addClass("show");
+        $("#home").addClass("h-100");
         $("#home").removeClass("fade");
         $("#iglesia").removeClass("show");
+        $("#iglesia").removeClass("h-100");
         $("#iglesia").addClass("fade");
       });
 
       $('#banquete-boton').on('click', function (event) {
         $("#home").removeClass("show");
+        $("#home").removeClass("h-100");
         $("#home").addClass("fade");
         $("#banquete").addClass("show");
         $("#banquete").removeClass("fade");
@@ -495,8 +516,10 @@
 
       $('#exit-banquete-boton').on('click', function (event) {
         $("#home").addClass("show");
+        $("#home").addClass("h-100");
         $("#home").removeClass("fade");
         $("#banquete").removeClass("show");
+        $("#banquete").removeClass("h-100");
         $("#banquete").addClass("fade");
       });
 
@@ -510,19 +533,18 @@
 
 <body class="document-body">
 
-  <div class="tab-content" id="myTabContent">
-    <div class="tab-pane show" id="home" role="tabpanel" aria-labelledby="home-tab">
+  <div class="tab-content h-100" id="myTabContent">
+    <div class="tab-pane show h-100" id="home" role="tabpanel" aria-labelledby="home-tab">
       <div class="gwd-page-content page1-content gwd-div-1cjb">
-        <div class="container-fluid overflow-auto">
+        <div class="container-fluid h-100 overflow-auto">
           <div class="row">
-            <div class="col-md-1"></div>
+            <div class="col-md-1 h-100 lat-color"></div>
             <div class="col-md-10 bck">
               <div class="row">
                 <div class="row">
                   <div class="col-md-4"></div>
                   <div class="col-md-4">
-                    <img id="gwd-image_2" src="assets/logo.png"
-                      class="gwd-image-841s gwd-image-d928 gwd-image-1wj0" />
+                    <img id="gwd-image_2" src="assets/logo.png" class="gwd-image-841s gwd-image-d928 gwd-image-1wj0" />
                   </div>
                   <div class="col-md-4"></div>
                 </div>
@@ -532,8 +554,9 @@
 
                   </div>
                   <div class="col-md-8" id="">
-                    <p class="gwd-span-1bl6">Tenemos el placer de invitaros a nuestro enlace matrimonial que se celebrar&aacute;:</p>
- 
+                    <p class="gwd-span-1bl6">Tenemos el placer de invitaros a nuestro enlace matrimonial que se
+                      celebrar&aacute;:</p>
+
                   </div>
                   <div class="col-md-2" id="">
 
@@ -560,7 +583,7 @@
                 <div class="col-md-4 line-left" id="boton_iglesia">
                   <button type="button" id="iglesia-boton" class="btn btn-default btn-lg boton bx100">
                     <div class="row">
-                      <div class="col-md-4" id="i1"><img  class="icon-img" src="assets/iglesia.png" ></span> </div>
+                      <div class="col-md-4" id="i1"><img class="icon-img" src="assets/iglesia.png"></span> </div>
                       <div class="col-md-8 button-text" id="i2">Santuario Nuestra Señora de Sonsoles</div>
                     </div>
                   </button>
@@ -575,8 +598,9 @@
                 <div class="col-md-4 line-left" id="boton_banquete">
                   <button type="button" id="banquete-boton" class="btn btn-default btn-lg boton bx100">
                     <div class="row">
-                      <div class="col-md-4" id="i1"><img class="icon-img" src="assets/plato.png" > </div>
-                      <div class="col-md-8 button-text" id="i2">Finca El Montecillo &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                      <div class="col-md-4" id="i1"><img class="icon-img" src="assets/plato.png"> </div>
+                      <div class="col-md-8 button-text" id="i2">Finca El Montecillo
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
                     </div>
 
                   </button>
@@ -597,22 +621,18 @@
                   <div class="col-md-3"></div>
                 </div>
               </div>
-              <div class="row">
-                <div class="gwd-path-vj88">
-                </div>
-              </div>
             </div>
 
-            <div class="col-md-1"></div>
+            <div class="col-md-1 h-100 lat-color"></div>
           </div>
         </div>
       </div>
     </div>
-    <div class="tab-pane fade" id="confirmacion" role="tabpanel" aria-labelledby="confirmacion-tab">
+    <div class="tab-pane fade h-100" id="confirmacion" role="tabpanel" aria-labelledby="confirmacion-tab">
       <div class="gwd-page-content gwd-div-fdsh">
         <div class="container-fluid overflow-auto">
           <div class="row">
-            <div class="col-md-1"></div>
+            <div class="col-md-1 h-100 lat-color"></div>
             <div class="col-md-10 bck">
               <div class="row">
                 <div class="col-md-3">
@@ -627,7 +647,7 @@
                 <div class="col-md-9">
                   <div class="embed-responsive embed-responsive-16by9">
                     <iframe class="embed-responsive-item" id="gwd-iframe_1"
-                      src="https://docs.google.com/forms/d/e/1FAIpQLSdaeXtXcgybu_Qiw92LuTiKOcWpq0y1l7ogihlF3SOjtTXnFA/viewform?embedded=true" ></iframe>
+                      src="https://docs.google.com/forms/d/e/1FAIpQLSdaeXtXcgybu_Qiw92LuTiKOcWpq0y1l7ogihlF3SOjtTXnFA/viewform?embedded=true"></iframe>
                   </div>
                 </div>
               </div>
@@ -638,20 +658,21 @@
                   </button>
                 </div>
                 <div class="col-md-9">
-                  <span class="gwd-span-tbay">Y si quieres ayudarnos con la fiesta puedes hacerlo aquí: ES02 2103 2501 56 0030119489</span>
+                  <span class="gwd-span-tbay">Y si quieres ayudarnos con la fiesta puedes hacerlo aquí: <br/> ES02 2103 2501
+                    56 0030119489</span>
                 </div>
               </div>
             </div>
-            <div class="col-md-1"></div>
+            <div class="col-md-1 h-100 lat-color"></div>
           </div>
         </div>
       </div>
     </div>
-    <div class="tab-pane fade" id="iglesia" role="tabpanel" aria-labelledby="iglesia-tab">
+    <div class="tab-pane fade h-100" id="iglesia" role="tabpanel" aria-labelledby="iglesia-tab">
       <div class="gwd-page-content gwd-div-d135">
         <div class="container-fluid overflow-auto">
           <div class="row">
-            <div class="col-md-1"></div>
+            <div class="col-md-1 h-100 lat-color"></div>
             <div class="col-md-10 bck">
               <div class="row">
                 <div class="col-md-3">
@@ -680,16 +701,16 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-1"></div>
+            <div class="col-md-1 h-100 lat-color"></div>
           </div>
         </div>
       </div>
     </div>
-    <div class="tab-pane fade" id="banquete" role="tabpanel" aria-labelledby="banquete-tab">
+    <div class="tab-pane fade h-100" id="banquete" role="tabpanel" aria-labelledby="banquete-tab">
       <div class="gwd-page-content gwd-div-1e03">
         <div class="container-fluid overflow-auto">
           <div class="row">
-            <div class="col-md-1"></div>
+            <div class="col-md-1 h-100 lat-color"></div>
             <div class="col-md-10 bck">
               <div class="row">
                 <div class="col-md-3">
@@ -703,21 +724,11 @@
                 <div class="col-md-3">
                   <p class="info-finca">Si no quieres perderte nada, te llevamos a la Finca desde el Centro de
                     Recepción
-                    de Visitantes de Ávila:
-                    <br />
-                    <br />Salidas:
-                    <br />&nbsp; - 20:00 h
-                    <br />&nbsp; - 20:15 h
-                    <br />&nbsp; - 20:30 h
-                    <br />
-                    <br />Vuelta desde la Finca será:
-                    <br />&nbsp; &nbsp;- 1:00 h
-                    <br />&nbsp; &nbsp;- 2:00 h
-                    <br />&nbsp; &nbsp;- 3:00 h<br />
+                    de Visitantes de Ávila.
                   </p>
                 </div>
                 <div class="col-md-9">
-                  <img src="assets/mapa-banquete.png" id="image_5_1" class="logoimg"/>
+                  <img src="assets/mapa-banquete.png" id="image_5_1" class="logoimg" />
                 </div>
               </div>
               <div class="row">
@@ -730,12 +741,9 @@
 
                 </div>
               </div>
-              <div class="row">
-
-              </div>
             </div>
+            <div class="col-md-1 h-100 lat-color"></div>
           </div>
-          <div class="col-md-1"></div>
         </div>
       </div>
     </div>
