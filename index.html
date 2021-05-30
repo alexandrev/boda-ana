@@ -115,10 +115,14 @@
     #logo-iglesia,
     #logo-banquete,
     #logo-confirmacion,
-    #image_3,
-    #image_4 {
+    #image_3 {
       width: 100%;
       display: block;
+    }
+
+    #image_4 {
+      margin-top: 10%;
+      width: 90%;
     }
 
     #titulo_inicial {
@@ -413,7 +417,6 @@
     }
 
 
-
     .gwd-imagebutton-1c19 {
       width: 6.93%;
       height: 26.43%;
@@ -456,8 +459,22 @@
       transform: rotate(180deg);
     }
 
+    .buttom {
+      margin-top: 100%;
+    }
+
     .lat-color {
       background-color: rgb(15, 198, 206);
+    }
+
+    .vh-90{
+      height: 90vh;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .h-100 {
+        height: auto;
+      }
     }
 
     .center {
@@ -631,34 +648,28 @@
     <div class="tab-pane fade h-100" id="confirmacion" role="tabpanel" aria-labelledby="confirmacion-tab">
       <div class="gwd-page-content gwd-div-fdsh">
         <div class="container-fluid overflow-auto">
-          <div class="row">
+          <div class="row ">
             <div class="col-md-1 h-100 lat-color"></div>
-            <div class="col-md-10 bck">
+            <div class="col-md-10 h-100 bck">
               <div class="row">
                 <div class="col-md-3">
                   <img id="logo-confirmacion" src="assets/logo.png" />
-                </div>
-                <div class="col-md-9">
+                  <div class="row">
+                    <div class="col-md-3 buttom">
+                      <button type="button" id="exit-confirmacion-boton" class="btn btn-default btn-lg exit-btn">
+                        <span class="glyphicon glyphicon-log-out icon-large" aria-hidden="true"></span>
+                      </button>
+                    </div>
+                  </div>
 
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-md-3"></div>
-                <div class="col-md-9">
-                  <div class="embed-responsive embed-responsive-16by9">
+                <div class="col-md-9 ">
+                  <div class="embed-responsive embed-responsive-16by9 vh-90">
                     <iframe class="embed-responsive-item" id="gwd-iframe_1"
                       src="https://docs.google.com/forms/d/e/1FAIpQLSdaeXtXcgybu_Qiw92LuTiKOcWpq0y1l7ogihlF3SOjtTXnFA/viewform?embedded=true"></iframe>
                   </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-3">
-                  <button type="button" id="exit-confirmacion-boton" class="btn btn-default btn-lg exit-btn">
-                    <span class="glyphicon glyphicon-log-out icon-large" aria-hidden="true"></span>
-                  </button>
-                </div>
-                <div class="col-md-9">
-                  <span class="gwd-span-tbay">Y si quieres ayudarnos con la fiesta puedes hacerlo aquí: <br/> ES02 2103 2501
+                  <span class="gwd-span-tbay">Y si quieres ayudarnos con la fiesta puedes hacerlo aquí: ES02 2103
+                    2501
                     56 0030119489</span>
                 </div>
               </div>
@@ -673,33 +684,23 @@
         <div class="container-fluid overflow-auto">
           <div class="row">
             <div class="col-md-1 h-100 lat-color"></div>
-            <div class="col-md-10 bck">
+            <div class="col-md-10 h-100 bck">
               <div class="row">
                 <div class="col-md-3">
                   <img id="logo-iglesia" src="assets/logo.png">
-                </div>
-                <div class="col-md-9">
-
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-1"></div>
-                <div class="col-md-11">
-                  <img src="assets/mapa-iglesia.png" id="image_4">
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-3">
                   <div class="row">
-                    <button type="button" id="exit-iglesia-boton" class="btn btn-default btn-lg exit-btn">
-                      <span class="glyphicon glyphicon-log-out icon-large" aria-hidden="true"></span>
-                    </button>
+                    <div class="col-md-3 buttom">
+                        <button type="button" id="exit-iglesia-boton" class="btn btn-default btn-lg exit-btn">
+                          <span class="glyphicon glyphicon-log-out icon-large" aria-hidden="true"></span>
+                        </button>                  
+                    </div>
                   </div>
                 </div>
                 <div class="col-md-9">
-
+                  <img src="assets/mapa-iglesia.png" id="image_4">
                 </div>
               </div>
+
             </div>
             <div class="col-md-1 h-100 lat-color"></div>
           </div>
@@ -715,30 +716,25 @@
               <div class="row">
                 <div class="col-md-3">
                   <img id="logo-banquete" src="assets/logo.png">
-                </div>
-                <div class="col-md-9">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <p class="info-finca">Y si no quieres perderte nada, recuerda que te llevamos  en autobus desde Tornadizos de Avila, la Hermita de Nuestra Señora Sonsoles y el Centro de
+                        Recepción
+                        de Visitantes de Ávila.
+                      </p>
+                    </div>
 
+                  </div>
+                  <div class="row">
+                    <div class="col-md-3 buttom">
+                      <button type="button" id="exit-banquete-boton" class="btn btn-default btn-lg exit-btn">
+                        <span class="glyphicon glyphicon-log-out icon-large" aria-hidden="true"></span>
+                      </button>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-md-3">
-                  <p class="info-finca">Si no quieres perderte nada, te llevamos a la Finca desde el Centro de
-                    Recepción
-                    de Visitantes de Ávila.
-                  </p>
-                </div>
-                <div class="col-md-9">
+                <div class="col-md-9 w-100">
                   <img src="assets/mapa-banquete.png" id="image_5_1" class="logoimg" />
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-3">
-                  <button type="button" id="exit-banquete-boton" class="btn btn-default btn-lg exit-btn">
-                    <span class="glyphicon glyphicon-log-out icon-large" aria-hidden="true"></span>
-                  </button>
-                </div>
-                <div class="col-md-9">
-
                 </div>
               </div>
             </div>
